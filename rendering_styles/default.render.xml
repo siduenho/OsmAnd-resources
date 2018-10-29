@@ -6838,6 +6838,14 @@
 					<case minzoom="15" tag="highway" value="mini_roundabout" icon="highway_mini_roundabout" shield="miniroundabout_anticlockwise_shield">
 						<apply_if nightMode="true" shield=""/>
 					</case>
+					<case minzoom="16" tag="highway" value="turning_circle" icon="highway_turning_circle" shield="highway_turning_circle_shield">
+						<apply_if nightMode="true" shield=""/>
+						<apply_if moreDetailed="false" maxzoom="16" icon=""/>
+					</case>
+					<case minzoom="16" tag="highway" value="turning_loop" icon="highway_turning_loop" shield="highway_turning_loop_shield">
+						<apply_if nightMode="true" shield=""/>
+						<apply_if moreDetailed="false" maxzoom="16" icon=""/>
+					</case>
 					<switch minzoom="14">
 						<case tag="ford" value="yes"/>
 						<case tag="ford" value="stepping_stones"/>
